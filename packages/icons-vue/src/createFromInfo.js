@@ -70,6 +70,8 @@ function createComponentFromInfo(info) {
     });
     const svgData = {
       attrs,
+      class: ((data.staticClass || '') + ' ' + (data.class || '')).trim(),
+      style: { ...data.staticStyle, ...data.style },
       on: listeners,
     };
 

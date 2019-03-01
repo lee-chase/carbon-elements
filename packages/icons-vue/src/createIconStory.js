@@ -33,7 +33,7 @@ storiesOf('${moduleName}', module)
     components: {
       icon: ${moduleName},
     },
-    template: \`<icon><title slot="title">${moduleName}</title></icon>\`,
+    template: \`<icon title="${moduleName}"></icon>\`,
   }))
   .add('with aria-label and tabindex', () => ({
     components: {
